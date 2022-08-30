@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.LoginController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="99.0" prefWidth="900.0">
+               <children>
+                  <Label text="Login to Bakery " textFill="#e110cc">
+                     <font>
+                        <Font name="Cambria" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox prefHeight="399.0" prefWidth="900.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="119.0" prefWidth="900.0">
+                     <children>
+                        <Label text="Username: " />
+                        <TextField fx:id="usernameField" prefHeight="31.0" prefWidth="257.0" promptText="Enter Username" styleClass="shadow" stylesheets="@bakery.css" />
+                     </children>
+                     <padding>
+                        <Insets top="100.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="900.0">
+                     <children>
+                        <Label text="Password:  " />
+                        <TextField fx:id="passwordField" prefHeight="31.0" prefWidth="259.0" promptText="Enter Password" styleClass="shadow" stylesheets="@bakery.css" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="89.0" />
+                        <Button fx:id="register" mnemonicParsing="false" stylesheets="@bakery.css" text="Register">
+                           <styleClass>
+                              <String fx:value="cart-button" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </Button>
+                        <Pane prefHeight="100.0" prefWidth="40.0" />
+                        <Button fx:id="login" mnemonicParsing="false" stylesheets="@bakery.css" text="Log in">
+                           <styleClass>
+                              <String fx:value="cart-button" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
